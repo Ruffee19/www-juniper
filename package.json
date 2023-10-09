@@ -1,0 +1,21 @@
+{
+  "name": "juniper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "watch": {
+    "build": "./src/*.html"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "autoreload-server -d ./dist -p 8080",
+    "watch": "npm-watch",
+    "build": "cp src/src-index.html dist/index.html; npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-watch": "^0.11.0",
+    "simple-autoreload-server": "^0.2.15"
+  }
+}
